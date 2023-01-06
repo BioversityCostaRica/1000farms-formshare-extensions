@@ -1,0 +1,36 @@
+<div id="inSlider" class="carousel slide" data-ride="carousel" >
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="carousel-caption" style="margin-left: 100px; top: 60px;">
+                    <h1 style="color: white" class="text-center">{{ _('Welcome to') }} </br>FormShare</h1>
+                </div>
+            </div>
+            <div class="header-back" style="background-image:url({{request.url_for_static('main_header.jpg','1000FARMS')}});"></div>
+
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="carousel-caption blank" style="margin-left: 60px; top: 20px;">
+                    <h1>{{ _('Complete data interoperability') }}<br/>{{ _('with OData') }}</h1>
+                    <h3><ul><li>{{ _('Get more insights from your ODK data by using technologies like') }} <br/>Tableau, Power BI {{ _('or') }} Jasper Reports {{ _('in real time.')}}</li></ul></h3>
+                    <h3><ul><li>{{ _('Clean data from Excel in real time while recording any changes.') }}</li></ul></h3>
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back" style="background-image:url({{request.url_for_static('header_odata.jpg','1000FARMS')}});"></div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#inSlider" style="width: 50px" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">{{ _(Previous) }}</span>
+    </a>
+    <a class="carousel-control-next" href="#inSlider" style="width: 50px;" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">{{ _('Next') }}</span>
+    </a>
+</div>

@@ -1,0 +1,10 @@
+<div class="footer fixed">
+    {% block footer %}
+    <div class="float-right">
+        <strong>{{ _('Version') }} {{ request.h.get_version() }}</strong>
+    </div>
+    <div>
+{#        <strong>FormShare</strong> &copy; 2021 QLands Technology Consultants#}
+    </div>
+    {% endblock footer %}
+</div>

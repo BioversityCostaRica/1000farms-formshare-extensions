@@ -1,0 +1,43 @@
+<section  style="background: white; margin-top: 10px" class="container features" >
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="blue-line"></div>
+            <h1>{{ _('The Alliance data management platform for ODK data collection') }}</h1>
+            <br/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-center wow fadeInLeft">
+            <div>
+                <i style="color: #026AA8" class="fas fa-database features-icon"></i>
+                <h2>{{ _('Centralize data') }}</h2>
+                <p>{{ _('Store your data in a consistent way inside a relational database without duplicates or inconsistencies') }}</p>
+            </div>
+            <div class="m-t-lg" style="margin-top: 100px">
+                <i style="color: #026AA8" class="fa fa-mobile features-icon"></i>
+                <h2>{{ _('Complete mobile support') }}</h2>
+                <p>{{ _('FormShare supports data collection technologies like') }} <a href="https://opendatakit.org/" target="_blank"> OpenData Kit (ODK)</a></p>
+            </div>
+        </div>
+        <div class="col-md-6 text-center  wow zoomIn">
+            <img src="{{ request.url_for_static('main_infograh.jpg','1000FARMS') }}" alt="dashboard" class="img-fluid">
+        </div>
+        <div class="col-md-3 text-center wow fadeInRight">
+            <div>
+                <i style="color: #026AA8" class="fab fa-hornbill features-icon"></i>
+                <h2>{{ _('Decentralize data access') }}</h2>
+                <p>{{ _('Create collaborations around data and allow access from any location using common tools like Excel, STATA or R') }} </p>
+            </div>
+            <div class="m-t-lg" style="margin-top: 100px">
+                <i style="color: #026AA8" class="fas fa-bolt features-icon"></i>
+                <h2>{{ _('Track changes') }}</h2>
+                <p>{{ _('Browse through your data online and track and manage the changes made to it') }}</p>
+            </div>
+        </div>
+    </div>
+    <br/>
+    {% block features_extras %}
+
+    {% endblock features_extras %}
+    </div>
+</section>
