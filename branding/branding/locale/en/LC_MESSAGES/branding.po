@@ -1,0 +1,117 @@
+# English translations for branding.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the branding project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: branding 1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-01-07 07:06-0500\n"
+"PO-Revision-Date: 2023-01-07 07:07-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: branding/templates/dashboard/snippets/footer.jinja2:4
+msgid "Version"
+msgstr ""
+
+#: branding/templates/dashboard/snippets/header.jinja2:6
+#: branding/templates/landing/index.jinja2:4
+msgid "FormShare - 1000FARMS"
+msgstr ""
+
+#: branding/templates/landing/snippets/contact.jinja2:17
+msgid "Send us an email"
+msgstr ""
+
+#: branding/templates/landing/snippets/contact.jinja2:19
+msgid "Or follow us on social media"
+msgstr ""
+
+#: branding/templates/landing/snippets/contact.jinja2:29
+msgid "Powered by FormShare"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:5
+msgid ""
+"FormShare is an advanced platform for 1000FARMS that extends ClimMob by "
+"collecting, integrating, and managing complex ODK surveys"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:13
+msgid "Centralize data"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:14
+msgid ""
+"Store your data in a consistent way inside a relational database without "
+"duplicates or inconsistencies"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:18
+msgid "Complete mobile support"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:19
+msgid "FormShare supports data collection technologies like"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:28
+msgid "Decentralize data access"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:29
+msgid ""
+"Create collaborations around data and allow access from any location "
+"using common tools like Excel, STATA or R"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:33
+msgid "Track changes"
+msgstr ""
+
+#: branding/templates/landing/snippets/features2.jinja2:34
+msgid ""
+"Browse through your data online and track and manage the changes made to "
+"it"
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:10
+msgid "Welcome to"
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:19
+msgid "Complete data interoperability"
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:19
+msgid "with OData"
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:20
+msgid "Get more insights from your ODK data by using technologies like"
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:20
+msgid "or"
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:20
+msgid "in real time."
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:21
+msgid "Clean data from Excel in real time while recording any changes."
+msgstr ""
+
+#: branding/templates/landing/snippets/slider.jinja2:34
+msgid "Next"
+msgstr ""
+

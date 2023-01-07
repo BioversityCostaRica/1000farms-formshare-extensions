@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: FS-100Farms\n"
+"Language: pt-br\n"
+
+#: branding/templates/dashboard/snippets/footer.jinja2:4
+msgid "Version"
+msgstr "Versão"
+
+#: branding/templates/dashboard/snippets/header.jinja2:6
+#: branding/templates/landing/index.jinja2:4
+msgid "FormShare - 1000FARMS"
+msgstr "FormShare - 1000FARMS"
+
+#: branding/templates/landing/snippets/contact.jinja2:17
+msgid "Send us an email"
+msgstr "Envie-nos um e-mail"
+
+#: branding/templates/landing/snippets/contact.jinja2:19
+msgid "Or follow us on social media"
+msgstr "Ou siga-nos nas mídias sociais"
+
+#: branding/templates/landing/snippets/contact.jinja2:29
+msgid "Powered by FormShare"
+msgstr "Usando o FormShare"
+
+#: branding/templates/landing/snippets/features2.jinja2:5
+msgid "FormShare is an advanced platform for 1000FARMS that extends ClimMob by collecting, integrating, and managing complex ODK surveys"
+msgstr "FormShare é uma plataforma avançada para 1000FARMS que estende o ClimMob através da coleta, integração e gerenciamento de pesquisas complexas ODK."
+
+#: branding/templates/landing/snippets/features2.jinja2:13
+msgid "Centralize data"
+msgstr "Centralizar os dados"
+
+#: branding/templates/landing/snippets/features2.jinja2:14
+msgid "Store your data in a consistent way inside a relational database without duplicates or inconsistencies"
+msgstr "Armazene seus dados de forma consistente dentro de um banco de dados relacional, sem duplicatas ou inconsistências."
+
+#: branding/templates/landing/snippets/features2.jinja2:18
+msgid "Complete mobile support"
+msgstr "Suporte móvel completo"
+
+#: branding/templates/landing/snippets/features2.jinja2:19
+msgid "FormShare supports data collection technologies like"
+msgstr "O FormShare suporta tecnologias de coleta de dados, tais como"
+
+#: branding/templates/landing/snippets/features2.jinja2:28
+msgid "Decentralize data access"
+msgstr "Descentralizar o acesso aos dados"
+
+#: branding/templates/landing/snippets/features2.jinja2:29
+msgid "Create collaborations around data and allow access from any location using common tools like Excel, STATA or R"
+msgstr "Criar colaborações em torno dos dados e permitir o acesso de qualquer lugar usando ferramentas comuns, tais como Excel, STATA ou R."
+
+#: branding/templates/landing/snippets/features2.jinja2:33
+msgid "Track changes"
+msgstr "Rastreamento de mudanças"
+
+#: branding/templates/landing/snippets/features2.jinja2:34
+msgid "Browse through your data online and track and manage the changes made to it"
+msgstr "Navegue seus dados online e acompanhe e gerencie as alterações de seus dados"
+
+#: branding/templates/landing/snippets/slider.jinja2:10
+msgid "Welcome to"
+msgstr "Bem-vindo ao"
+
+#: branding/templates/landing/snippets/slider.jinja2:19
+msgid "Complete data interoperability"
+msgstr "Interoperabilidade total dos dados"
+
+#: branding/templates/landing/snippets/slider.jinja2:19
+msgid "with OData"
+msgstr "com OData"
+
+#: branding/templates/landing/snippets/slider.jinja2:20
+msgid "Get more insights from your ODK data by using technologies like"
+msgstr "Obtenha mais informações de seus dados ODK usando tecnologias tais como"
+
+#: branding/templates/landing/snippets/slider.jinja2:20
+msgid "or"
+msgstr "o"
+
+#: branding/templates/landing/snippets/slider.jinja2:20
+msgid "in real time."
+msgstr "em tempo real."
+
+#: branding/templates/landing/snippets/slider.jinja2:21
+msgid "Clean data from Excel in real time while recording any changes."
+msgstr "Limpe os dados do Excel em tempo real enquanto registra quaisquer mudanças."
+
+#: branding/templates/landing/snippets/slider.jinja2:34
+msgid "Next"
+msgstr "Próximo"
+
