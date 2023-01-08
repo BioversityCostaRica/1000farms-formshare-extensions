@@ -62,7 +62,7 @@ class ClimMobLoginSuccess(FormSharePublicView):
         else:
             data = {
                 "user_id": profile_info["id"],
-                "user_name": profile_info["user_name"],
+                "user_name": profile_info["fullname"] or profile_info["id"],
                 "user_email": profile_info["email"],
                 "user_cdate": datetime.datetime.now(),
                 "user_apikey": str(uuid.uuid4()),
