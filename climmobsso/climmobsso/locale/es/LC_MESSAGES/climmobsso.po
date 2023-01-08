@@ -1,0 +1,37 @@
+# Spanish translations for climmobsso.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the climmobsso project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: climmobsso 1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-01-08 10:40-0500\n"
+"PO-Revision-Date: 2023-01-08 10:40-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: climmobsso/templates/generic/login.jinja2:4
+#: climmobsso/templates/generic/login.jinja2:34
+msgid "Sign in with ClimMob"
+msgstr "Ingresa con ClimMob"
+
+#: climmobsso/templates/generic/login.jinja2:25
+msgid "Welcome to FormShare"
+msgstr "Bienvenido a FormShare"
+
+#: climmobsso/templates/generic/login.jinja2:28
+msgid "Sign in with your ClimMob account"
+msgstr "Inicie sesión con su cuenta ClimMob"
+
+#: climmobsso/templates/generic/login.jinja2:40
+msgid "Version"
+msgstr "Versión"
+
