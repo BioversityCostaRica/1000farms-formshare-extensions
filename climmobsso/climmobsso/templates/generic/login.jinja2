@@ -1,0 +1,45 @@
+{% extends 'base.jinja2' %}
+{% import 'dashboard/macros/form.jinja2' as form %}
+
+{% block titlesection %}{{ _('Sign in with ClimMob') }}{% endblock titlesection %}
+
+{% block css %}
+    {% cssresource request,'formshare','style' %}
+{% endblock css %}
+
+{% block topScripts %}
+    {% jsresource request,'formshare','bootstrap' %}
+{% endblock topScripts %}
+
+{% block bodyclass %}gray-bg{% endblock bodyclass %}
+
+{% block body %}
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            {% block logginlogo %}
+                <div>
+                    <h1 class="logo-name">FS</h1>
+                </div>
+            {% endblock logginlogo %}
+            {% block loginwelcome %}
+                <h3>{{ _('Welcome to FormShare') }}</h3>
+            {% endblock loginwelcome %}
+            {% block logingheadmsg %}
+                <p>{{ _('Sign in witn your ClimMob account') }}</p>
+            {% endblock logingheadmsg %}
+            {% block login_errors %}
+                {{ form.display_errors(errors) }}
+            {% endblock login_errors %}
+            {% block loginform %}
+                <button type="submit" class="btn btn-primary block full-width m-b">{{ _('Sign in with ClimMob') }}</button>
+            {% endblock loginform %}
+            {% block login_tools %}
+
+            {% endblock login_tools %}
+            {% block copyright %}
+                <p class="m-t"> <small>{{ _('Version') }} {{ request.h.get_version() }}</small> </p>
+{#                <p class="m-t"> <small>FormShare &copy; 2020 QLands Technology Consultants</small> </p>#}
+            {% endblock copyright %}
+        </div>
+    </div>
+{% endblock body %}

@@ -65,12 +65,9 @@ class ClimMobLoginSuccess(FormSharePublicView):
                 "user_name": profile_info["user_name"],
                 "user_email": profile_info["email"],
                 "user_cdate": datetime.datetime.now(),
+                "user_apikey": str(uuid.uuid4()),
+                "user_apisecret": encode_data(self.request, secrets.token_hex(16)),
             }
-            if "user_apikey" not in data.keys():
-                data["user_apikey"] = str(uuid.uuid4())
-            if "user_apisecret" not in data.keys():
-                data["user_apisecret"] = secrets.token_hex(16)
-            data["user_apisecret"] = encode_data(self.request, data["user_apisecret"])
             added, error_message = register_user(self.request, data)
             if not added:
                 self.append_to_errors(error_message)
@@ -117,3 +114,8 @@ class ClimMobLoginSuccess(FormSharePublicView):
 
             self.returnRawViewResult = True
             return HTTPFound(self.request.route_url("climmob_login"))
+
+
+class ClimMobLoginPage(FormSharePublicView):
+    def process_view(self):
+        return {}

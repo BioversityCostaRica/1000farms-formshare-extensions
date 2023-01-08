@@ -1,6 +1,6 @@
 import formshare.plugins as plugins
 import formshare.plugins.utilities as u
-from .views import ClimMobLogin
+from .views import ClimMobLogin, ClimMobLoginSuccess, ClimMobLoginPage
 import sys
 import os
 
@@ -17,12 +17,19 @@ class ClimMobSSO(plugins.SingletonPlugin):
     def after_mapping(self, config):
         # We add here a new route /json that returns a JSON
         custom_map = [
-            u.add_route("climmob_login", "/climmobsoo/login", ClimMobLogin, None),
             u.add_route(
-                "climmob_login_success", "/climmobsoo/login_success", ClimMobLogin, None
+                "climmob_sso_login", "/climmobsoo/sso_login", ClimMobLogin, None
+            ),
+            u.add_route(
+                "climmob_sso_success",
+                "/climmobsoo/sso_success",
+                ClimMobLoginSuccess,
+                None,
+            ),
+            u.add_route(
+                "climmob_login", "/login", ClimMobLoginPage, "generic/login.jinja2"
             ),
         ]
-
         return custom_map
 
     def update_config(self, config):
