@@ -49,7 +49,7 @@ class ClimMobLoginSuccess(FormSharePublicView):
             authorization_response=self.request.url,
         )
         profile_info = climmob.get(conf["climmobsso.profile_url"]).json()
-        user = get_user_data(self.request, profile_info["id"])
+        user = get_user_data(profile_info["id"], self.request)
         login_data = {"login": profile_info["id"], "group": "mainApp"}
         if user is not None:
             update_last_login(self.request, user.login)

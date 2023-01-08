@@ -26,9 +26,7 @@ class ClimMobSSO(plugins.SingletonPlugin):
                 ClimMobLoginSuccess,
                 None,
             ),
-            u.add_route(
-                "climmob_login", "/login", ClimMobLoginPage, "generic/login.jinja2"
-            ),
+            u.add_route("login", "/login", ClimMobLoginPage, "generic/login.jinja2"),
         ]
         return custom_map
 
