@@ -31,7 +31,7 @@
                 {{ form.display_errors(errors) }}
             {% endblock login_errors %}
             {% block loginform %}
-                <button type="submit" class="btn btn-primary block full-width m-b">{{ _('Sign in with ClimMob') }}</button>
+                <button onclick="location.href='{{ request.route_url('climmob_sso_login') }}';" class="btn btn-primary block full-width m-b">{{ _('Sign in with ClimMob') }}</button>
             {% endblock loginform %}
             {% block login_tools %}
 
