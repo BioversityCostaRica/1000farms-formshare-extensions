@@ -12,6 +12,7 @@ from formshare.config.elasticfeeds import get_manager
 from elasticfeeds.activity import Actor, Object, Activity
 import logging
 from formshare.processes.elasticsearch.user_index import get_user_index_manager
+from ast import literal_eval
 
 log = logging.getLogger("formshare")
 
@@ -116,6 +117,29 @@ class ClimMobLoginSuccess(FormSharePublicView):
             return HTTPFound(self.request.route_url("climmob_login"))
 
 
+def get_policy(request, policy_name):
+    policies = request.policies()
+    for policy in policies:
+        if policy["name"] == policy_name:
+            return policy["policy"]
+    return None
+
+
 class ClimMobLoginPage(FormSharePublicView):
     def process_view(self):
+        # If we logged in then go to dashboard or next page
+        policy = get_policy(self.request, "main")
+        login_data = policy.authenticated_userid(self.request)
+        if login_data is not None:
+            login_data = literal_eval(login_data)
+            if login_data["group"] == "mainApp":
+                current_user = get_user_data(login_data["login"], self.request)
+                if current_user is not None:
+                    self.returnRawViewResult = True
+                    next_page = self.request.params.get(
+                        "next"
+                    ) or self.request.route_url("dashboard", userid=current_user.login)
+                    return HTTPFound(
+                        location=next_page,
+                    )
         return {}
